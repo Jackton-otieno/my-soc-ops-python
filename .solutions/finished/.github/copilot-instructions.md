@@ -43,12 +43,48 @@ uv run ruff check .                                 # Lint
 ## Styling
 
 Uses custom CSS utility classes (Tailwind-like) in `app/static/css/app.css`:
+
 - Layout: `.flex`, `.grid`, `.items-center`
 - Spacing: `.p-4`, `.mb-2`, `.mx-auto`
 - Colors: `.bg-accent`, `.bg-marked`, `.text-gray-700`
 
-## State Management
+## Design Guide: Playful Candy Pop Aesthetic
 
-- `GameSession` manages game state server-side
-- State persisted via signed cookies (itsdangerous)
-- HTMX handles partial page updates without full reloads
+**Goal:** Make every user touchpoint (README, UI, docs) feel fun, energetic, and memorable—like a toybox or anime bubble world.
+
+### Visual Identity
+
+- Use bright, saturated primary colors (pink, blue, yellow, green, purple)
+- Prefer round, bubbly shapes and soft edges in UI and visuals
+- Add playful banners, emoji dividers, and ASCII art to docs and landing pages
+
+### Typography & Icons
+
+- Use bold, friendly fonts (in code: prefer large, rounded headings)
+- Sprinkle emojis liberally in section headers, lists, and callouts
+- Use badges with playful text and color (e.g., “🍬 Candy-Ready”, “🧸 Toybox Fun”)
+
+### Layout & Effects
+
+- Use creative section dividers: emoji lines (🍭🍬🧸✨), dotted/dashed HTML `<hr>`, or ASCII art
+- Add blockquote callouts for tips, fun facts, or warnings (with emoji)
+- Use collapsible `<details>` for FAQs, spoilers, or bonus content
+
+### Color & Theming
+
+- Use HTML `<span>` for color highlights in markdown (e.g., `<span style="background:#ffe4fa; color:#ff69b4;">Candy Pop!</span>`)
+- Stick to a consistent, energetic palette throughout
+
+### Accessibility
+
+- Always provide alt text for images and banners
+- Ensure color contrast is readable and not the only means of conveying info
+
+### README/Docs Example
+
+See the main `README.md` for a full playful, candy pop redesign example.
+
+**Remember:**
+
+- Prioritize fun and clarity—never sacrifice readability for style
+- Test rendering on GitHub and in the app for visual consistency
